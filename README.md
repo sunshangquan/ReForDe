@@ -1,4 +1,6 @@
 # ReForDe
+Code for Rethinking Image Restoration for Object Detection
+
 ## Abstract
 Although image restoration has achieved significant progress, its potential to assist object detectors in adverse imaging conditions lacks enough attention in the research community. It is reported that the existing image restoration methods cannot improve the object detector performance and sometimes even reduce the detection performance. To address the issue, we propose a targeted adversarial attack in the restoration procedure to boost object detection performance after restoration. Specifically, we present an ADAM-like adversarial attack to generate pseudo ground truth for restoration fine-tuning. Resultant restored images are close to original sharp images, and at the same time, lead to better object detection results. We conduct extensive experiments in image dehazing and low light enhancement and show the superiority of our method over conventional training and other domain adaptation and multi-task methods. The proposed pipeline can be applied to all restoration methods and both one- and two-stage detectors.
 
@@ -22,9 +24,10 @@ python test.py --lq_path [LOW_QUALITY_PATH] --gt_path [GROUND_TRUTH_PATH] --save
 
 # mAP computation
 
-We refer to https://github.com/Cartucho/mAP.git for mAP computation
+We refer to https://github.com/Cartucho/mAP.git for mAP computation.
 
 # Thanks to the following repositories:
 
 yolov3 from https://github.com/qqwweee/keras-yolo3
+
 frcnn from https://github.com/chenyuntc/simple-faster-rcnn-pytorch
