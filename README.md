@@ -22,6 +22,11 @@ python train.py --gpu_ids 0 --model_det yolov3 --model_res GridDehaze --lr 1e-7 
 python test.py --lq_path [LOW_QUALITY_PATH] --gt_path [GROUND_TRUTH_PATH] --save_path [OUTPUT_PATH] --checkpoint [CHECKPOINT_PATH] --model_res [RESTORATION_MODEL_TYPE (e.g. MSBDN)] --task [dehaze or dark] --model_det [DETECTION_MODEL_YTPE (e.g. yolov3)]
 ```
 
+##
+
+Regarding the pretrained models, the original system where the experiments are runging was partially damaged. We found some related models from the history and uploaded them on [OneDrive](https://1drv.ms/u/s!AgRtHximCauqjEp0Th72ywlN_T5x?e=G6WCvh). Please refer to them for test if they help.
+
+
 # mAP computation
 
 We refer to https://github.com/Cartucho/mAP.git for mAP computation.
